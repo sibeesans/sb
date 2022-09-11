@@ -1,5 +1,4 @@
 #!/bin/bash
-clear
 clear 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[0;100;33m         • RESTART MENU •          \E[0m"
