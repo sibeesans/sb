@@ -3,7 +3,6 @@ dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Dat
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
-
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -126,7 +125,7 @@ mkdir -p /var/lib/SIJA >/dev/null 2>&1
 echo "IP=" >> /var/lib/SIJA/ipvps.conf
 
 echo ""
-wget -q https://raw.githubusercontent.com/adammoi/anjim/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/sibeesans/sb/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
 yellow "Add Domain for vmess/vless/trojan dll"
@@ -151,15 +150,15 @@ echo -e "$green      Install SSH / WS               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/adammoi/anjim/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/sibeesans/sb/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install XRAY              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/adammoi/anjim/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/adammoi/anjim/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/sibeesans/sb/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/sibeesans/sb/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
