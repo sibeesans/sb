@@ -12,6 +12,7 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 
+	clear
 	echo ""
 	echo " Select the existing client you want to remove"
 	echo " Press CTRL+C to return"
