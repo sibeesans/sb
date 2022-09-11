@@ -227,10 +227,6 @@ kernelku=$(uname -r)
 #harini=`date -d "0 days" +"%d-%m-%Y"`
 #jam=`date -d "0 days" +"%X"`
 
-# DNS PATCH
-#tipeos2=$(uname -m)
-Name=$(curl -sS https://raw.githubusercontent.com/adammoi/anjim/main/anjay/allow | grep $MYIP | awk '{print $2}')
-Exp=$(curl -sS https://raw.githubusercontent.com/adammoi/anjim/main/anjay/allow | grep $MYIP | awk '{print $3}')
 # GETTING DOMAIN NAME
 Domen="$(cat /etc/xray/domain)"
 echo -e ""
